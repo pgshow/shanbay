@@ -3,8 +3,8 @@ This bot can help you make custom dictionary on 扇贝 every convenient.
 Login in Shanbay.com automatically, Quickly snapshot the subtitle on the PotPlayer by click mouse middle button, then use Baidu OCR API to get the text and search the text on Shanbay.com directly.
 
 # 准备
-- Account.py 里设置你的账号密码。
-- BaiduAI.py 里面设置你的百度AI密匙
+- 自建 keys 文件夹
+- 修改 account.py 内容成你的，然后放入 keys 文件夹
 
 ###使用流程:
 1.运行 1aunch.bat
