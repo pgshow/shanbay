@@ -6,7 +6,8 @@ Login in Shanbay.com automatically, Quickly snapshot the subtitle on the PotPlay
 - 自建 keys 文件夹
 - 修改 account.py 内容成你的，然后放入 keys 文件夹
 
-###使用流程:
+### 使用流程:
+
 1.运行 1aunch.bat
 
 2.程序会自动登录扇贝，请提前设置你的账号密码
