@@ -1,5 +1,5 @@
 # Shanbay Bot
-This bot can help you make custom dictionary on 扇贝 every convenient.
+This bot can help you make custom English dictionary on 扇贝 very convenient.
 Login in Shanbay.com automatically, Quickly snapshot the subtitle on the PotPlayer by click mouse middle button, then use Baidu OCR API to get the text and search the text on Shanbay.com directly.
 
 # 准备
@@ -20,7 +20,7 @@ Login in Shanbay.com automatically, Quickly snapshot the subtitle on the PotPlay
 
 6.然后你可以看到单词解释，以及最重要的 '加入单词本功能'。
 
-7.加入单词本的单词你可以在手机APP里面学习，边看美剧边学单词是不是很有用。
+7.加入单词本的单词你可以在扇贝的手机APP里面学习，此法边看美剧边学单词方便又快捷。
 
 ### 注意
-- 需要先登录扇贝，否则没有任何反应
+- 需要等待 Selenium 自动登录扇贝，否则点击鼠标中键没有任何反应
