@@ -4,10 +4,16 @@ import pyperclip
 from loguru import logger
 
 
-def is_potplayer():
+def is_the_app():
+    """判断是否是需要截屏的目标程序"""
     active_window = pyautogui.getActiveWindow()
-    if active_window and active_window.title.endswith(' - PotPlayer'):
-        return True
+    if active_window:
+        if active_window.title.endswith('PotPlayer'):
+            logger.debug(f'在 PotPlayer 播放器上截图')
+            return True
+        elif active_window.title.startswith('51AirClass'):
+            logger.debug(f'在 51Talk 课件上截图')
+            return True
 
 
 def is_chrome():
@@ -33,7 +39,6 @@ def player_get_word():
 
 def pause_potplayer():
     """播放暂停"""
-
 
 
 if __name__ == '__main__':
