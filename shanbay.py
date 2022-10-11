@@ -45,9 +45,9 @@ class Shanbay:
             logger.error('登录 扇贝出错')
             return
 
-        driver.find_element(By.ID, 'input-account').send_keys('pgshow')
+        driver.find_element(By.ID, 'input-account').send_keys(USER)
         time.sleep(1)
-        driver.find_element(By.ID, 'input-password').send_keys('qq818266')
+        driver.find_element(By.ID, 'input-password').send_keys(PASSWORD)
         time.sleep(1)
         driver.find_element(By.ID, 'button-login').click()
         time.sleep(2)

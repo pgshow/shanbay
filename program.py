@@ -4,14 +4,14 @@ import pyperclip
 from loguru import logger
 
 
-def is_the_app():
+def is_the_apps():
     """判断是否是需要截屏的目标程序"""
     active_window = pyautogui.getActiveWindow()
     if active_window:
         if active_window.title.endswith('PotPlayer'):
             logger.debug(f'在 PotPlayer 播放器上截图')
             return True
-        elif active_window.title.startswith('51AirClass'):
+        elif active_window.title.startswith('课程'):
             logger.debug(f'在 51Talk 课件上截图')
             return True
 

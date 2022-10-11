@@ -79,7 +79,7 @@ class Bot(object):
         PotPlayer 窗口单击鼠标中键，打开截图识别英语单词的功能
         PotPlayer 字幕上双击鼠标中键，自动判断是否字幕，然后复制到剪切板并查询
         """
-        if button.name != 'middle' or not program.is_the_app():
+        if button.name != 'middle' or not program.is_the_apps():
             # 必须是鼠标中键在 PotPlayer 上的行为
             return
 

@@ -30,7 +30,7 @@ def on_mouse_right_click(x, y, button, pressed):
 
     if button.name == 'right':
         # 鼠标右键出菜单
-        if not program.is_the_app():
+        if not program.is_the_apps():
             return
 
         if not pressed:
@@ -59,7 +59,7 @@ def on_mouse_right_click(x, y, button, pressed):
         copyWordTime = 0
 
         # 短时间内单机鼠标左键视为复制单词
-        if not program.is_the_app():
+        if not program.is_the_apps():
             return
 
         if pressed:
@@ -81,7 +81,7 @@ def on_mouse_middle_click(x, y, button, pressed):
     if pressed:
         pressTime = time.time()
 
-        if not program.is_the_app():
+        if not program.is_the_apps():
             return
 
         if mouseAct.single_double_click(x, y):
