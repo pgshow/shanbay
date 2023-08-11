@@ -48,6 +48,7 @@ class SafeDriver:
         self.set_cap()
 
         driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=self.options)
+        # driver = webdriver.Chrome(options=self.options)
         self.add_stealth_js(driver)
         return driver
 

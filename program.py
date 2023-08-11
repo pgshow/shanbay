@@ -8,11 +8,18 @@ def is_the_apps():
     """判断是否是需要截屏的目标程序"""
     active_window = pyautogui.getActiveWindow()
     if active_window:
+        # print(active_window.title)
         if active_window.title.endswith('PotPlayer'):
             logger.debug(f'在 PotPlayer 播放器上截图')
             return True
         elif active_window.title.startswith('课程'):
             logger.debug(f'在 51Talk 课件上截图')
+            return True
+        elif ' - YouTube 和另外 ' in active_window.title:
+            logger.debug(f'在 Youtube 上截图')
+            return True
+        elif ' - 喜马拉雅' in active_window.title:
+            logger.debug(f'在 Ximalaya 上截图')
             return True
 
 
