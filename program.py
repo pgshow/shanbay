@@ -21,6 +21,9 @@ def is_the_apps():
         elif ' - 喜马拉雅' in active_window.title:
             logger.debug(f'在 Ximalaya 上截图')
             return True
+        elif 'ChatGPT' in active_window.title:
+            logger.debug(f'在 ChatGPT 上截图')
+            return True
 
 
 def is_chrome():

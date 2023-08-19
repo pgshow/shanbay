@@ -35,7 +35,7 @@ def get_exam_range(word):
 
         exam_range_tmp = soup.select_one('span.level-title').get('level')
 
-        exam_range = re.search(r'.+(\d{4,5}).+', exam_range_tmp).group(1)
+        exam_range = re.search(r'(\d{4,5})', exam_range_tmp).group(1)
 
         return exam_range
     except Exception as e:
